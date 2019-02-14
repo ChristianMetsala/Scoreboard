@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>scores</title>   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/scores.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Scoreboard</h1>
+      <div id = "uusi-asiakas" class="form-inline">
+         <h2>Player Scores</h2>
+         <div class="form-group">
+             <label class="sr-only">Player</label>
+             <input type="text" class="form-control" 
+                    id="add-player" placeholder="Player number">
+        </div>       
+        <div class="form-group">
+             <label class="sr-only">Firstname</label>
+             <input type="text" class="form-control" id="add-firstname" placeholder="Firstname">
+        </div>
+        <div class="form-group">
+             <label class="sr-only">Lastname</label>
+             <input type="text" class="form-control" id="add-lastname" placeholder="Lastname">
+        </div>
+        <div class="form-group">
+             <label class="sr-only">Score</label>
+             <input type="int" class="score-control" id="add-score" placeholder="Score (000)">
+        </div>
+        
+        <button id="add">add</button> 
+      </div>
+      <table id="score-table" class="table table-striped">
+          <thead>
+              <tr>
+              <th>Player number</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Score</th>
+              </tr>
+          </thead>
+          <tbody id="player-rows">
+          
+		  </tbody>
+        
+      </table>
+
+      <button onclick="sortElements()">Sort</button>
+
+  </main>
+<!-- ======================================== VALIDATION, TIMESTAMP -->
+  <footer>
+    <script type="text/javascript"> 
+      document.write("Page last modified: " + document.lastModified);
+    </script>
+    <p>
+      <a href="https://validator.w3.org/check/referer">
+         <img style="border:0;width:88px;height:31px"
+          src="https://www.w3.org/QA/Tools/I_heart_validator_lg"
+          alt="Valid HTML!" />
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+         <img style="border:0;width:88px;height:31px"
+         src="http://jigsaw.w3.org/css-validator/images/vcss"
+         alt="Valid CSS!" />
+      </a>
+    </p>
+  </footer>
+  <script type="text/javascript" src="js/scores.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
